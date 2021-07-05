@@ -266,28 +266,28 @@
           </li> -->
           
           <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+            <a href="/" class="nav-link {{ request()->is('home') ? 'active' :'' }} {{ request()->is('/') ? 'active' :'' }}">
               <i class="nav-icon fas fa-home"></i>
               <p>Dashboard</p>
             </a>
           </li>
           
           <li class="nav-item">
-            <a href="/guru" class="nav-link">
-              <i class="nav-icon fas fa-chalkboard-teacher"></i>
+            <a href="/guru" class="nav-link {{ request()->is('guru') ? 'active' :'' }}">
+              <i class="nav-icon fas fa-chalkboard-teacher" ></i>
               <p>Guru</p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="/siswa" class="nav-link">
+            <a href="/siswa" class="nav-link {{ request()->is('siswa') ? 'active' :'' }}">
               <i class="nav-icon fas fa-user-graduate"></i>
               <p>Siswa</p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="/pelajaran" class="nav-link">
+            <a href="/pelajaran" class="nav-link {{ request()->is('pelajaran') ? 'active' :'' }}">
               <i class="nav-icon fas fa-book"></i>
               <p>Pelajaran</p>
             </a>
